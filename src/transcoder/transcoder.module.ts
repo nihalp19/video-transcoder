@@ -4,6 +4,7 @@ import { TranscoderController } from './transcoder.controller';
 
 @Module({
   providers: [TranscoderService],
-  controllers: [TranscoderController]
+  controllers: [TranscoderController],
+  exports: [TranscoderService],
 })
 export class TranscoderModule {}
