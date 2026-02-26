@@ -35,6 +35,9 @@ export class TranscoderService {
           '-f hls',
           '-hls_time 6',
           '-hls_playlist_type vod',
+          '-hls_segment_type fmp4',
+          '-hls_fmp4_init_filename init.mp4',
+          '-hls_segment_filename seg_%03d.m4s',
           '-master_pl_name master.m3u8',
           '-var_stream_map v:0,a:0 v:1,a:1 v:2,a:2',
         ])
