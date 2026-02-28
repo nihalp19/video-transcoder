@@ -65,6 +65,8 @@ export class WebhookService {
       videoName: videoName,
       fileType: fileExtension.replace('.', ''),
       pathLocationOrUrl: `${this.MINIO_ENDPOINT}/${bucketName}/${objectKey}`,
+      bucketName: bucketName,
+      objectKey: objectKey,
       size: fileSize,
       resolution: 'auto', // Will be detected by ffmpeg
     };

@@ -22,4 +22,11 @@
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false
   }
+  ,
+  "exclude": [
+     "output",
+     "node_modules",
+     "test",
+     "dist"
+  ]
 }
